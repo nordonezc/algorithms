@@ -1,4 +1,4 @@
-package co.com.niki.algorithms.exercises.Warm;
+package co.com.niki.algorithms.exercises.warm;
 
 import java.io.*;
 

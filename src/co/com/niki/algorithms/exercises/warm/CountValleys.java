@@ -1,4 +1,4 @@
-package co.com.niki.algorithms.exercises.Warm;
+package co.com.niki.algorithms.exercises.warm;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -16,13 +16,13 @@ public class CountValleys {
         do{
         steps = Integer.parseInt(bufferedReader.readLine());
         String path = bufferedReader.readLine();
-        System.out.println("number of valleys is: " + countingValleys(steps, path));
+        System.out.println("number of valleys is: " + countingValleys(path));
         } while (steps != 0);
 
         bufferedReader.close();
     }
 
-    private static int countingValleys(int steps, String path) {
+    private static int countingValleys(String path) {
         int numberOfValleys = 0;
         int levelOfTheSea = 0;
         for(int i=0; i<path.length(); i++){

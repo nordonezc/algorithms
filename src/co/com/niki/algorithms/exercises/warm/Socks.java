@@ -1,4 +1,4 @@
-package co.com.niki.algorithms.exercises.Warm;
+package co.com.niki.algorithms.exercises.warm;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -19,7 +19,7 @@ public class Socks {
 
         List<Integer> integerList = Stream.of(bufferedReader.readLine().strip().split(" "))
                 .map(Integer::parseInt)
-                .collect(Collectors.toList());
+                .toList();
 
         System.out.println(findSocks(integerList));
     }
